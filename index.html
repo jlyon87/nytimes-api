@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>NY Times Search</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/master.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="jumbotron">
+				<h1>NY Times Search</h1>
+				<p>Search the NY Times for articles</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="">
+						<label for="search-text">Search</label>
+						<input id="search-text" type="text" name="" value="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<button type="button" name="button" onclick="App.controller.search();">Search</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div id="search-results" class="card-deck" ></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+		<script type="text/javascript" src="assets/js/view.js" charset="utf-8"></script>
+		<script type="text/javascript" src="assets/js/nytimes-api.js" charset="utf-8"></script>
+		<script type="text/javascript" src="assets/js/app.js" charset="utf-8"></script>
+	</body>
+</html>
